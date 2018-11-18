@@ -1,0 +1,128 @@
+// =========================================
+//  Images
+// =========================================
+.user-img {
+  width: em(45px);
+  height: em(45px);
+  border-radius: 50%;
+  margin-right: em(8px);
+
+  @include mq(large) {
+    margin-right: em(8px);
+  }
+}
+
+.bell-svg {
+  width: em(35px);
+  height: em(50px);
+  border-right: 1px solid lightgray;
+  padding-right: em(8px);
+  margin-right: em(12px);
+
+  /*padding-bottom: em(8px);
+  padding-top: em(8px);
+  margin-top: 10%;*/
+
+  @include mq(large) {
+    height: em(50px);
+    /*margin-top: em(30px);
+    padding-right: em(25px);*/
+  }
+}
+
+.search-svg {
+  width: em(14px);
+  fill: $color-secondary;
+}
+
+
+.twitter-box,
+.facebook-box,
+.google-box {
+  svg {
+    width: em(50px);
+    height: em(50px);
+    margin: auto;
+    path {
+      fill: white;
+    }
+
+  }
+
+  .twitter-svg-background,
+  .facebook-svg-background,
+  .google-svg-background {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: em(20px);
+    padding: em(18px);
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: em(80px);
+    height: em(80px);
+  }
+};
+
+/*
+.member-img {
+  width: em(52px);
+  height: em(52px);
+  border-radius: 50%;
+  margin-top: 28px;
+  margin-left: 47px;
+  @include mq(large) {
+    margin-left: 60px;
+  }
+}
+*/
+
+.member-img {
+  border-radius: 50%;
+  width: em(80px);
+  height: em(80px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: em(10px);
+
+  @include mq(medium) {
+    margin-bottom: em(10px);
+  }
+}
+
+.member-activity-img {
+  border-radius: 50%;
+  width: em(80px);
+  height: em(80px);
+  margin-left: em(10px);
+  margin-bottom: em(10px);
+
+  @include mq(medium) {
+    display: block;
+    margin-left: em(15px);
+    margin-top: em(10px);
+  }
+
+  @include mq(large) {
+    margin-left: em(15px);
+  }
+}
+
+
+.wrap-bell-svg {
+ position: relative;
+ 
+   svg {
+    cursor: pointer;
+  }
+}
+
+ .notification-dot {
+position: absolute;
+top: 10px;
+right: 19px;
+padding: 3px;
+border-radius: 50%;
+background-color: lighten(green, 20%);
+color: white;
+}

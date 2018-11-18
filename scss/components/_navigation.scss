@@ -1,0 +1,57 @@
+// =========================================
+//  Navigation
+// =========================================
+
+.nav {
+  background: $color-secondary;
+  width: 100%;
+  height: em(75px);
+  overflow-y: hidden;
+  padding-top: em(10px);
+  position: fixed;
+  z-index: 50;
+  top: em(75px);
+
+  @include mq(large) {
+    left: 0;
+    height: 100%;
+    width: em(140px);
+
+  }
+
+  #menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include mq(large) {
+      flex-direction: column;
+      margin-top: em(60px);
+      margin-left: em(15px);
+
+    }
+  }
+
+  .nav-svg {
+    width: em(25px);
+    @include mq(medium) {
+      width: em(30px);
+    }
+    @include mq(large) {
+      margin-bottom: em(30px);
+
+    }
+
+  }
+}
+
+#menu path {
+  fill: gray;
+}
+
+#menu .current {
+  path{
+    fill: #fff;
+  }
+}

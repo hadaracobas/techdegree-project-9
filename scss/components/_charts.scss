@@ -1,0 +1,29 @@
+
+.last-two-charts {
+
+  #barChart-container {
+    @include mq(medium) {
+      display: block;
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+    @include mq(large) {
+      border: 1px solid lightgrey;
+      margin-bottom: 20px;
+    }
+  }
+
+  #doughnutChart-container {
+    @include mq(medium) {
+      float: right;
+      width: 50%;
+      padding: 10px;
+    }
+    @include mq(large) {
+      border: 1px solid lightgrey;
+      border-right: none;
+      margin-bottom: 20px;
+    }
+  }
+}

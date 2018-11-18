@@ -1,0 +1,80 @@
+// =========================================
+//  Forms
+// =========================================
+
+
+.search {
+  //border: 1px solid blue;
+  background: lighten(lightgray, 10%);
+  width: em(600px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include mq(medium) {
+    width: em(800px);
+  }
+  @include mq(large) {
+    width: em(1300px);
+  }
+
+
+  form {
+  margin-top: em(22px);
+  //margin-left: em(-18px);
+  padding-right: em(30px);
+  width: em(350px);
+  height: em(40px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include mq(medium) {
+    width: em(500px);
+    padding-right: em(45px);
+  }
+  @include mq(large) {
+    padding-right: em(60px);
+  }
+  }
+}
+
+.search-input {
+  //border-color: lightgray;
+  padding-left: em(8px);
+  border: none;
+  height: em(39px);
+  outline: none;
+  //width: em(450px);
+  @include mq(medium) {
+    width: em(450px);
+  }
+}
+
+.ms-widgets {
+  form {
+    #user-search {
+      width: 100%;;
+      height: auto;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: solid 1px lightgray;
+      border-radius: .9px;
+
+    }
+
+    #message-textarea {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: solid 1px lightgray;
+      border-radius: .9px;
+    }
+
+
+  }
+}
+
+#timeZone {
+  width: 100%;
+  height: 40px;
+}

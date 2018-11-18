@@ -1,0 +1,40 @@
+
+// =========================================
+// Base
+// =========================================
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+p,
+span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: gray;
+  @include mq(medium) {
+    font-size: 14px;
+  }
+  @include mq(large) {
+    font-size: 18px;
+  }
+}

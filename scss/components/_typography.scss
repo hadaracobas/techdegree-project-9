@@ -1,0 +1,80 @@
+// =========================================
+//  Typography
+// =========================================
+.app-title {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #fff;
+  margin-left: em(22px);
+  font-size: em(55px);
+  margin-top: 7px;
+  @include mq(large) {
+    font-size: em(65px);
+
+  }
+}
+
+.user-name {
+  color: #fff;
+  font-size: em(17px);
+  padding-bottom: 5px;
+  padding-top: em(17px);
+
+  @include mq(large) {
+    font-size: em(22px);
+    padding-top: em(9px);
+  }
+}
+
+.dashboard-title {
+  margin-left: em(10px);
+  margin-right: em(10px);
+  @include mq(large) {
+    margin-left: em(25px);
+  }
+}
+
+.traffic-title,
+.social-stats-title,
+.members-title,
+.recents-title,
+.message-user-title {
+  color: $color-text--light;
+  margin-left: em(10px);
+  margin-right: em(10px);
+  text-align: center;
+  @include mq(medium) {
+    text-align: left;
+    margin-left: em(20px);
+  }
+  @include mq(large) {
+    margin-left: em(25px);
+  }
+}
+
+.mobile-traffic-title,
+.mobile-users-title {
+  color: $color-text--light;
+  margin-left: em(20px);
+  margin-right: em(10px);
+  text-align: center;
+  @include mq(medium) {
+    margin-left: em(30px);
+    text-align: left;
+  }
+  @include mq(large) {
+    margin-left: em(25px);
+  }
+}
+
+.social-stats-title {
+  //display: block;
+  margin-top: em(30px);
+  @include mq(medium) {
+    margin-bottom: -55px;
+    margin-left: em(40px);
+  }
+  @include mq(large) {
+    margin-top: em(90px);
+    margin-left: em(80px);
+  }
+}
